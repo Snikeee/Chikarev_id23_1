@@ -7,7 +7,6 @@ from app.services.binarization import binarize_image
 
 router = APIRouter()
 
-
 class ImageRequest(BaseModel):
     image: str
     algorithm: str
@@ -26,7 +25,6 @@ async def binary_image(request: ImageRequest):
         buffered = BytesIO()
         binarized.save(buffered, format="PNG")
         binarized_base64 = base64.b64encode(buffered.getvalue()).decode()
-
         return {"binarized_image": binarized_base64}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
