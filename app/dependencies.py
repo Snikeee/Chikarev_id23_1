@@ -20,19 +20,19 @@ async def get_current_user(
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
-        print(f"Token: {token}")  # Отладочный вывод
+        print(f"Token: {token}")
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
-        print(f"Payload: {payload}")  # Отладочный вывод
+        print(f"Payload: {payload}")
         email: str = payload.get("sub")
         if email is None:
-            print("No email in token")  # Отладочный вывод
+            print("No email in token")
             raise credentials_exception
     except JWTError as e:
-        print(f"JWT Error: {str(e)}")  # Отладочный вывод
+        print(f"JWT Error: {str(e)}")
         raise credentials_exception
 
     user = get_user_by_email(db, email)
     if user is None:
-        print(f"User not found for email: {email}")  # Отладочный вывод
+        print(f"User not found for email: {email}")
         raise credentials_exception
     return user

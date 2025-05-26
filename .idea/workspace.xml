@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e7135a-48b1-446c-9668-1d424bd93869" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/cruds/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/__init__.py" afterDir="false" />
+    <list default="true" id="e7e7135a-48b1-446c-9668-1d424bd93869" name="Changes" comment="db and auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/api/endpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/endpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/core/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/binarization.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/binarization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/binarization.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Snikeee/Chikarev_id23_1&quot;,
-    &quot;accountId&quot;: &quot;1cd70e36-5417-4350-97f8-2e3a5e1a94d2&quot;
+    &quot;accountId&quot;: &quot;f898a93b-b8e2-4a33-826d-9068fc4b8844&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -54,9 +50,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.binarization_tasks.executor&quot;: &quot;Run&quot;,
     &quot;Python.dependencies.executor&quot;: &quot;Debug&quot;,
     &quot;Python.endpoints.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_api.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -86,6 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1742750304250</updated>
       <workItem from="1748163823901" duration="81000" />
+      <workItem from="1748268175267" duration="3608000" />
+      <workItem from="1748272057451" duration="33000" />
+      <workItem from="1748272202596" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -95,7 +96,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744315041105</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="db and auth">
+      <option name="closed" value="true" />
+      <created>1748268229387</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748268229387</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,11 +123,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="db and auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="db and auth" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/praktikum$test_api.coverage" NAME="test_api Coverage Results" MODIFIED="1748272242602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/praktikum$endpoints.coverage" NAME="endpoints Coverage Results" MODIFIED="1747217692535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/api" />
     <SUITE FILE_PATH="coverage/praktikum$main.coverage" NAME="main Coverage Results" MODIFIED="1747246455756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/praktikum$dependencies.coverage" NAME="dependencies Coverage Results" MODIFIED="1747246396558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/praktikum$binarization_tasks.coverage" NAME="binarization_tasks Coverage Results" MODIFIED="1748271232029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/tasks" />
   </component>
 </project>
