@@ -1,5 +1,6 @@
-from fastapi import FastAPI
-from app.api import endpoints
+from fastapi import FastAPI, Depends, HTTPException
+from app.api.endpoints import router as api_router
+
 
 app = FastAPI(
     title="Image Binarization API",
@@ -7,4 +8,4 @@ app = FastAPI(
     version="1.0.0"
 )
 
-app.include_router(endpoints.router)
+app.include_router(api_router)
